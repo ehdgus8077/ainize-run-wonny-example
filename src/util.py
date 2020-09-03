@@ -63,8 +63,7 @@ def downloadImages(urlList):
     localFilePaths = []
     for url in urlList:
         try:
-            for url in urlList:
-                localFilePaths.append(downloadImage(url))
+            localFilePaths.append(downloadImage(url))
         except Exception as e:
             localFilePaths.append(str(e))
             print(e, flush=True)
